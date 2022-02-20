@@ -37,6 +37,12 @@ const questions = [
         message: 'Please enter any additional pertinent user information.'
     }, 
     {
+        type: 'list',
+        name: 'license',
+        message: 'Pick your License.',
+        choices: ["MIT", "ISC", "APACHE", "GPL", "None"]
+    }, 
+    {
         type: 'input',
         name: 'contributing',
         message: 'Please describe how a user can contribute to this repo.'
@@ -59,7 +65,7 @@ function init() {
         writeToFile('README.MD', generateMarkdown({...responses}))
     })
 }
--
+
 
 // Function call to initialize app
 init();
