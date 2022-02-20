@@ -1,2 +1,3 @@
-# read-meh
-Node app to create README file
+# Professional README Generator Starter Code
+
+[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
