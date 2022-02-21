@@ -83,6 +83,9 @@ Click on the ${renderLicenseLink(data.license)} link to learn more.
 
 ***
 
+## Video Walkthrough
+https://www.awesomescreenshot.com/video/7499949?key=00048f991e03b2e06e6e01e08aeb5510
+
 ### Questions
 Please don't hesitate to reach out if you have any questions or comments. You can reach me through github or directly via email. \n 
 [Github](https://github.com/${data.github}) \n
