@@ -28,7 +28,7 @@ undefined
 
 
 ## Tests
-run tests
+jest
 
 ***
 
@@ -37,6 +37,9 @@ The license for this software is provided by APACHE.
 Click on the [APACHE](https://opensource.org/licenses/Apache-2.0) link to learn more.
 
 ***
+
+## Video Walkthrough
+https://www.awesomescreenshot.com/video/7499949?key=00048f991e03b2e06e6e01e08aeb5510
 
 ### Questions
 Please don't hesitate to reach out if you have any questions or comments. You can reach me through github or directly via email. 
