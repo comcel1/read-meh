@@ -3,7 +3,7 @@
   ![badge](https://img.shields.io/badge/License-Apache-blue.svg)
 
 ## Description
-Well, this is my first project…
+Not sure what to say, so we are typing something
 
 ***
 
@@ -16,11 +16,11 @@ Well, this is my first project…
 
 
 ## Installation
-npm i 
+npm i
 
 
 ## Usage
-not really, this is good!
+not that I can think of
 
 
 ## Contributions
@@ -28,7 +28,7 @@ undefined
 
 
 ## Tests
-jest
+run tests
 
 ***
 
