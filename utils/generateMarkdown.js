@@ -1,54 +1,62 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-renderLicenseBadge = license => {
+renderLicenseBadge = (license) => {
   if (license === "MIT") {
     return `![badge](https://img.shields.io/badge/License-MIT-blue.svg)`;
-  
   } else if (license === "ISC") {
-    return `![badge](https://img.shields.io/badge/License-ISC-blue.svg)`
-
+    return `![badge](https://img.shields.io/badge/License-ISC-blue.svg)`;
   } else if (license === "APACHE") {
-    return `![badge](https://img.shields.io/badge/License-Apache-blue.svg)`
-
+    return `![badge](https://img.shields.io/badge/License-Apache-blue.svg)`;
   } else if (license === "GPL") {
-    return `![badge](https://img.shields.io/badge/License-GPL-blue.svg)`
-
+    return `![badge](https://img.shields.io/badge/License-GPL-blue.svg)`;
   } else if (license === "None") {
-    return '';
-}
+    return "";
+  }
 };
-
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
-renderLicenseLink = license => {
-  
+function renderLicenseLink(license) {
+  if (license === "MIT") {
+    return `[MIT](https://opensource.org/licenses/MIT)`;
+  } else if (license === "ISC") {
+    return `[ISC](https://opensource.org/licenses/ISC)`;
+  } else if (license === "APACHE") {
+    return `[APACHE](https://opensource.org/licenses/Apache-2.0)`;
+  } else if (license === "GPL") {
+    return `[GPL](https://opensource.org/licenses/gpl-license)`;
+  } else if (license === "None") {
+    return "";
+  }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === "None") {
+    return "";
+  } else {
+    return `The license for this software is provided by ${license}.`;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {
-//   return `# ${data.title}
-
-// `;
-// }
 
 function generateMarkdown(data) {
-return `# ${data.title}
+  return `# ${data.title}
+
+  ${renderLicenseBadge(data.license)}
 
 ## Description
 ${data.description}
 
+***
 
 ## Table of Contents
-* [Installation](#installation) \n
-* [Usage](#usage)  \n
-* [License](#license)  \n
-* [Contributors](#contributing)  \n
+* [Installation](#installation) 
+* [Usage](#usage)  
+* [Contributions](#contributions)  
+* [License](#license)  
 * [Questions](#questions)  
 
 
@@ -67,16 +75,20 @@ ${data.contributing}
 ## Tests
 ${data.tests}
 
+***
 
 ## License
-${renderLicenseBadge(data.license)}
+${renderLicenseSection(data.license)}
+Click on the ${renderLicenseLink(data.license)} link to learn more.
 
+***
 
-## Questions
-Please don't hesitate to reach out if you have any questions or comments. You can reach me through github or directly via email. 
-[Github](https://github.com/${data.github})  
+### Questions
+Please don't hesitate to reach out if you have any questions or comments. You can reach me through github or directly via email. \n 
+[Github](https://github.com/${data.github}) \n
 ${data.email}
-`
+
+`;
 }
 
 module.exports = generateMarkdown;

@@ -44,7 +44,7 @@ const questions = [
     }, 
     {
         type: 'input',
-        name: 'contributing',
+        name: 'contributions',
         message: 'Please describe how a user can contribute to this repo.'
     }, 
     {
